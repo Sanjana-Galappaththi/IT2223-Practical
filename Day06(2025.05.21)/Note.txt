@@ -1,0 +1,73 @@
+//Example 01:
+
+1.Create array with 1000 numbers.
+2.use tic/toc to measure time for:
+      Linear Search
+      Binary Search
+3.Compare Results
+ 
+code:
+//randi([minvalue,maxvalue],minvalue,maxvalue)=> We can Genarate single random integer
+
+arr = sort(randi([1, 10000], 1, 1000));
+target = arr(randi([1, 1000]));
+
+tic;
+index_linear = find(arr == target, 1);
+time_linear = toc;
+
+
+tic;
+left = 1;
+right = length(arr);
+index_binary = -1;
+
+while left <= right
+    mid = floor((left + right) / 2);
+    if arr(mid) == target
+        index_binary = mid;
+        break;
+    elseif arr(mid) < target
+        left = mid + 1;
+    else
+        right = mid - 1;
+    end
+end
+time_binary = toc;
+
+
+fprintf('Linear Search Time: %.6f seconds\n', time_linear);
+fprintf('Binary Search Time: %.6f seconds\n', time_binary);
+
+if index_linear == index_binary
+    fprintf('Both search methods found the target at index %d.\n', index_linear);
+else
+    fprintf('Search methods returned different indices: Linear (%d), Binary (%d).\n', index_linear, index_binary);
+end
+
+
+
+//Example 02:
+
+Selection sort=> Create a code for this array by using selection sort. arr = [64, 25, 12, 11];  
+
+arr = [64, 25, 12, 11];  
+ 
+n = length(arr);  
+
+for i = 1:n-1
+    min_idx = i;  
+    
+    for j = i+1:n
+        if arr(j) < arr(min_idx)
+            min_idx = j;  
+        end
+    end
+    
+    temp = arr(i);
+    arr(i) = arr(min_idx);
+    arr(min_idx) = temp;
+end
+
+fprintf("Sorted array: ");
+disp(arr);
