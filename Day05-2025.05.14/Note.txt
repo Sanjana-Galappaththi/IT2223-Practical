@@ -1,0 +1,152 @@
+Question 01:
+
+code:
+n=10;
+
+tic;
+
+for i=1:n
+    disp(i);
+end
+
+elapsedTime = toc;
+
+fprintf('Elapsed time:%fseconds\n',elapsedTime);
+
+output: Elapsed time:0.003325seconds
+
+
+########################################################################
+Question 02:
+change the value in n and compare the time
+
+code:
+n=15;
+
+tic;
+
+for i=1:n
+    disp(i);
+end
+
+elapsedTime = toc;
+
+fprintf('Elapsed time:%fseconds\n',elapsedTime);
+
+output: Elapsed time:0.005161seconds
+
+#####################################################################
+Question 03:
+
+code:
+x=5;
+tic;
+if x==5
+    disp('x is 5');
+else
+    disp('x is not 5');
+end
+toc;
+
+output: x is 5
+Elapsed time is 0.000258 seconds.
+
+##############################################################################
+
+Question 04:
+(Linear Search)
+Take an array and compare each element with the target and display it
+
+code:
+
+arr=[3,5,7,9,11,13];
+
+target=9;
+
+found=false;
+for i=1:length(arr)
+    if arr(i)==target
+        found=true;
+        index=i;
+        break;
+
+    end
+end
+    
+
+if found
+        fprintf('The target element is found at index: %d \n' ,index);
+else
+     fprintf('Target element not found!');
+end
+
+
+output:The target element is found at index: 4 
+
+########################################################################
+
+Question 05:
+Take an array and compare each element with the target and display it 
+then get time complexity
+
+code:
+arr=[3,6,8,12,14,17,25,29,31,36,42,47,53,55,62];
+tic;
+
+target=14;
+found=false;
+for i=1:length(arr)
+    if arr(i)==target
+        found=true;
+        index=i;
+        break;
+
+    end
+end
+    
+
+if found
+        fprintf('The target element is found at index: %d \n' ,index);
+else
+     fprintf('Target element not found!');
+end
+
+toc;
+
+output:
+> Question05
+The target element is found at index: 5 
+Elapsed time is 0.001192 seconds.
+
+
+Question 06:
+Binary Search
+* Works only on sorted array
+* Compare middle element with target
+* Divide and conquer strategy
+
+function binary_search(arr, target)
+    left = 1;
+    right = length(arr);
+    
+    while left <= right
+        mid = floor((left + right) / 2);
+        
+        % Display the current element being compared
+        disp(['Comparing with element: ', num2str(arr(mid))]);
+        
+        if arr(mid) == target
+            disp(['Element ', num2str(target), ' found at index ', num2str(mid)]);
+            return;
+        elseif arr(mid) < target
+            left = mid + 1;
+        else
+            right = mid - 1;
+        end
+    end
+    
+    disp('Element not found.');
+end
+
+
+
