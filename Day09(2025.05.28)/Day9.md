@@ -1,15 +1,41 @@
-# IT2234-Practicals
+Example 01:
+Merge Sort
 
-01.Print "Hello World!"
+![Q1](https://github.com/user-attachments/assets/4d8f940d-3051-47e3-9dc0-89f37709affb)
 
-![Note1](https://github.com/user-attachments/assets/b9b38168-5aea-482a-80df-cba65d641521)
+Example 02:
+if you want to save the folder another name you can use function name as running code name
+
+![Q2](https://github.com/user-attachments/assets/e0effaad-217f-456b-9459-6b54e2599016)
+
+Example03:
+How can get a multiple outputs by using one function
+
+![Q3](https://github.com/user-attachments/assets/8c720c91-fd6a-4b4b-aa46-a2d38b166fab)
+
+Example 04:
+
+![Q4](https://github.com/user-attachments/assets/8aa320c3-8587-4dde-9362-4428f2312eeb)
+
+Example 05:
+
+![Q5](https://github.com/user-attachments/assets/fabf80a6-ef93-4a80-874f-702a4956c8da)
+
+Example 06:
+
+![Q6](https://github.com/user-attachments/assets/c5eb5881-75a3-4cb5-b53c-6f151cb4da4c)
 
 
-02.Arithmetic Operations
+Example 07:
 
-![Note2](https://github.com/user-attachments/assets/8a9c8410-cd71-4e63-ac97-33dfc1f8ab76)
+![Q7](https://github.com/user-attachments/assets/403d536a-b1fe-4e5f-a5fe-4237ebcabed6)
 
+Example 08:
+How to get the input for factorial
 
-03.Loops
+![Q8](https://github.com/user-attachments/assets/2f0745bb-82bc-40c2-beeb-eed569d44a82)
 
-![Note3](https://github.com/user-attachments/assets/95db8003-e091-4f5b-9e37-d463d21925a6)
+Example 09:
+
+![Uploading Q9.png…]()
+
