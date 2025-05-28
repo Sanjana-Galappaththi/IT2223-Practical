@@ -37,5 +37,6 @@ How to get the input for factorial
 
 Example 09:
 
-![Uploading Q9.png…]()
+![Q9](https://github.com/user-attachments/assets/ca8bdc16-f904-4d37-a916-a66f3ed3a00b)
+
 
