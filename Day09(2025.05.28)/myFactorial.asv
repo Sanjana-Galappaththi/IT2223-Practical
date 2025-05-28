@@ -1,0 +1,10 @@
+function result = myFactorial(n)
+    if n == 0  \\
+        result = 1;  % Factorial of 0 is 1
+    else
+        result = 1;
+        for i = 1:n
+            result = result * i;
+        end
+    end
+end

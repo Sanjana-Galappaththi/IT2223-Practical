@@ -1,0 +1,126 @@
+%Example 01:
+%Merge Sort
+
+function sum = addNumbers(x,y)   %input parameters->(x,y)
+    sum = x +y;
+	end
+	
+	
+%if you want to create a function you must have to use  function name as folder name
+%output:  
+ %addNumbers(2,3)
+  % ans = 5
+  
+
+%Example 02:
+%if you want to save the folder another name you can use function name as running code name
+%ex: 
+function sum =addNumbers(x,y)  
+sum=x+y;
+end
+
+%output:
+%functions(5,6)
+%ans = 11
+
+
+%Example03:
+%How can get a multiple outputs by using one function
+
+function [add,sub,mul,div] = operations(a,b)
+add=a+b;
+sub=a-b;
+mul=a*b;
+div=a/b;
+end
+
+%output: 
+ [add,sub,mul,div] = operations(3,2)
+
+add =
+
+     5
+
+
+sub =
+
+     1
+
+
+mul =
+
+     6
+
+
+div =
+
+    1.5000
+
+
+%Example 04:
+
+function greet(name) %one parameter(like input)
+disp(['Hello',name]);
+end
+
+%inside the Command window you can type => greet('Sanjana')
+%output: Hello Sanjana
+
+
+%Example 05:
+
+function piValue = getPi()
+ piValue = 3.1416;
+end
+
+%output: 
+%inside the Command window you can type => getPi 
+ ans =3.1416
+
+
+%Example 06:
+
+function myFunction()
+disp('hello,thid function has no outputs');
+end
+
+%inside the Command window you can type => myFunction
+%output:
+hello,thid function has no outputs
+
+
+
+%Example 07:
+%How to get factorial 
+
+function fact =factorial(n)
+fact=1;
+for i=1:n
+fact = fact *i;
+end
+
+%output: 
+%inside the Command window you can type =>factorial(5)
+ans = 120
+
+%Exampple 08:
+%How to get the input for factorial
+
+function fact =factorial()
+fact=1;
+choice=input('Enter a number');
+for i=1:choice
+fact = fact *i;
+end
+end
+
+
+%Example 09:
+
+function result = myFactorial(n)
+    if n == 0  || n == 1
+        result = 1;  % Factorial of 0 is 1
+    else
+        result=n*myFactorial(n-1);
+    end
+end
