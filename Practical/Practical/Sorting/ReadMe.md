@@ -1,23 +1,27 @@
 ## Bubble Sort
 
-![b](https://github.com/user-attachments/assets/89850716-5705-4813-947b-76c0aee667c8)
+![Q2](https://github.com/user-attachments/assets/8b0d0ced-6162-40dd-8830-5a7c1a1ad216)
+
 
 
 ## Insertion Sort
 
-![i](https://github.com/user-attachments/assets/484efc1b-ac20-4b63-8b61-bb0186ff3c08)
+![Q2](https://github.com/user-attachments/assets/74e1455c-628f-414c-b450-3bb916d258df)
 
 
 ## Merge Sort
 
-![m](https://github.com/user-attachments/assets/756c098f-ea98-4fb5-9dc2-4d9710b43842)
+![Merge sort](https://github.com/user-attachments/assets/d111dd52-d66b-4cb9-8275-87b7dfa2a536)
+
 
 
 ## Quick Sort
 
-![q](https://github.com/user-attachments/assets/c6d69da8-3c4d-40c4-845f-fc04de0721ce)
+![QuickSort](https://github.com/user-attachments/assets/3b4614f1-327e-4570-a2d6-cd51d2682483)
 
 
-## selection Sort
 
-![3](https://github.com/user-attachments/assets/9345c949-49fc-4eb9-825b-fb42f2aa7ed5)
+
+
+
+
