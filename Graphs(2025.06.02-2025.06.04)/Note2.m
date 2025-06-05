@@ -84,8 +84,29 @@ end
 
 %Example01:
 
-s=10;
-t=1:10;
-G=graph(s,t);
-h=plot(G,'Layout','force');
-highlight(h,[1,3],'EdgeColor','red');
+% Define the edges of the graph
+s = [1 1 1 10 10 5 5 9 9 4 4 8 8 3 3 7 7 2 2 6 1 1 2 3 4];
+t = [11 10 6 5 11 11 9 4 11 8 11 3 11 7 11 2 11 6 11 11 2 5 3 4 5];
+
+% Create the graph
+G = graph(s, t);
+
+% Initialize edge colors (default is black)
+edgeColors = zeros(numedges(G), 3); % RGB values
+
+% Define which edges belong to the star (connected to node 11) - color maroon
+starEdges = find(t == 11 | s == 11); % Edges connected to node 11
+edgeColors(starEdges, :) = repmat([0.5, 0, 0], length(starEdges), 1); % Maroon
+
+% Define which edges belong to the polygon (not connected to 11) - color green
+polygonEdges = find(t ~= 11 & s ~= 11); % Edges not connected to node 11
+edgeColors(polygonEdges, :) = repmat([0, 1, 0], length(polygonEdges), 1); % Green
+
+% Plot the graph with colored edges
+h = plot(G, 'EdgeColor', edgeColors, 'LineWidth', 2);
+
+% Optionally make node 11 (star center) larger and colored differently
+highlight(h, 11, 'MarkerSize', 10, 'NodeColor', [0.5 0 0]); % Maroon center
+
+% Add title
+title('Graph with Star Edges (Maroon) and Polygon Edges (Green)');
