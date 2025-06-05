@@ -1,176 +1,59 @@
-# MATLAB Code Repository
+### 01.Graph 
 
-This repository contains various MATLAB scripts demonstrating basic mathematical operations, matrix manipulations, and control structures such as loops and conditionals.
+![Graph](https://github.com/user-attachments/assets/82abe1e0-22c5-4818-b486-b557e9b2634a)
 
-## Requirements
-- MATLAB application is required to run these scripts.
+### 02.Directed Graph
 
-## Included MATLAB Scripts
+![DirectedGraph01](https://github.com/user-attachments/assets/1f7aabbf-a043-464f-b196-fac0bb175518)
 
-### 1. Basic Arithmetic Operations
-```matlab
-% Define variables
-a = 5;
-b = 10;
+### 03.Directed Graph 02
 
-% Addition
-c = a + b;
-% Multiplication
-d = a * b;
-% Division
-e = a / b;
-% Subtraction
-f = a - b;
-```
-**Output:**
-```
-c = 15
-d = 50
-e = 0.5000
-f = -5
-```
+![DirectedGraph02](https://github.com/user-attachments/assets/71a6bd33-5e6f-422d-8fd4-c883b75abe6a)
 
-### 2. Matrix Creation and Operations
-```matlab
-% Define Matrices
-A = [1 2 3];
-B = [4;5;6];
-C = [2 3 4;5 6 7;8 9 10];
 
-% Size of matrix
-size_C = size(C);
-% Sum of matrix elements
-sum_C = sum(sum(C));
-% Column-wise and row-wise sums
-col_sum = sum(C,1);
-row_sum = sum(C,2);
-```
-**Output:**
-```
-size_C = [3 3]
-sum_C = 54
-col_sum = [15 18 21]
-row_sum = [9; 18; 27]
-```
+### 04.Weighted Undirected graph:
 
-### 3. Finding Min and Max Elements
-```matlab
-% Column-wise minimum
-min_col = min(C);
-% Minimum of whole matrix
-min_all = min(min(C));
-% Column-wise maximum
-max_col = max(C);
-% Maximum of whole matrix
-max_all = max(max(C));
-```
-**Output:**
-```
-min_col = [2 3 4]
-min_all = 2
-max_col = [8 9 10]
-max_all = 10
-```
+![WeightedUndirectedGraph](https://github.com/user-attachments/assets/1ad93195-7fe3-4a39-accd-b63fa1be2413)
 
-### 4. Accessing Matrix Elements
-```matlab
-% Accessing specific elements
-second_element = C(2);
-first_row = C(1,:);
-first_column = C(:,1);
-last_element_first_row = C(1,end);
-```
-**Output:**
-```
-second_element = 5
-first_row = [2 3 4]
-first_column = [2; 5; 8]
-last_element_first_row = 4
-```
 
-### 5. Matrix Addition, Subtraction, and Multiplication
-```matlab
-A = [1 2 3 4;5 6 7 8;9 10 11 12;13 14 15 16];
-B = A; % Duplicate matrix
+### 05.Unweighted Graph:
 
-% Element-wise Addition and Subtraction
-sum_matrix = A + B;
-diff_matrix = A - B;
+![UnweightedGraph](https://github.com/user-attachments/assets/387588df-d50c-40ac-9f76-83893cb08404)
 
-% Matrix Multiplication
-prod_matrix = A * B;
-```
-**Output:**
-```
-sum_matrix =
-  2  4  6  8
- 10 12 14 16
- 18 20 22 24
- 26 28 30 32
 
-diff_matrix =
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
+### 06.Adjecency Matrix
 
-prod_matrix =
-  90  100  110  120
- 202  228  254  280
- 314  356  398  440
- 426  484  542  600
-```
 
-### 6. Conditional Statements
-```matlab
-num = 4;
-if num > 0
-    disp('The Number Is Positive')
-else
-    disp('The Number Is Negative')
-end
-```
-**Output:**
-```
-The Number Is Positive
-```
+### An adjacency matrix is a square matrix used to represent a graph. 
+### Each row and column corresponds to a vertex, and the entries indicate whether there is an edge between two vertices.
+### If the graph is undirected, the matrix is symmetric. For weighted graphs,the matrix can store edge weights instead of just 1s and 0s. 
+### It’s a convenient way to store and process graph data efficiently!
 
-### 7. Checking Odd or Even Number
-```matlab
-if mod(num,2) == 0
-    disp('The Number Is Even')
-else
-    disp('The Number Is Odd')
-end
-```
-**Output:**
-```
-The Number Is Even
-```
+![AdjecencyMatrix](https://github.com/user-attachments/assets/cad894dc-9048-46fd-8391-950697bfc910)
 
-### 8. While Loop: Printing Numbers 1 to 5
-```matlab
-a = 1;
-while a <= 5
-    disp (a)
-    a = a + 1;
-end
-```
-**Output:**
-```
-1
-2
-3
-4
-5
-```
+### 07.nodeColor
 
-## How to Run the Scripts
-1. Open MATLAB.
-2. Copy and paste the desired script into the MATLAB command window or save it as a `.m` file and run it.
-3. Observe the output in the command window.
+![nodeColor](https://github.com/user-attachments/assets/18bd9ca7-df11-4d79-94cd-a7d7340d3815)
 
-## Conclusion
-These MATLAB scripts demonstrate fundamental concepts such as arithmetic operations, matrix manipulation, conditional statements, and loops. They serve as an excellent introduction to MATLAB programming.
 
+### 08.Shape
+
+![shape](https://github.com/user-attachments/assets/3436f776-ffe9-40d8-b2b8-e4ea673b3655)
+
+
+### 09.colorNodes
+
+![colorNodes](https://github.com/user-attachments/assets/6267b163-cff4-40a5-a6cf-028af0b9de94)
+
+
+### 10.Hightlight
+
+![highlights](https://github.com/user-attachments/assets/069e1e2c-b415-4bd0-8ba6-10d3ed951b73)
+
+
+### 11.adjecency
+
+![adjecency](https://github.com/user-attachments/assets/d6d06009-1a61-46d3-8874-0e28f41c6374)
+
+### 12.Example01:
 
